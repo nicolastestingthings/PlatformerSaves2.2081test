@@ -181,6 +181,7 @@ CheckpointObject* PSPlayLayer::markCheckpoint() {
     if (l_checkpointObject && savesEnabled() && m_fields->m_inPostUpdate && !m_isPracticeMode) {
         if (m_fields->m_triedPlacingCheckpoint) {
             m_fields->m_triedPlacingCheckpoint = false;
+        }
         } else if (m_activatedCheckpoint != nullptr) {
             //log::info("[markCheckpoint] triggered checkpoint");
             l_checkpointObject->m_fields->m_timePlayed = m_timePlayed;
