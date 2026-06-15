@@ -171,12 +171,6 @@ void PSPlayLayer::postUpdate(float i_unkFloat) {
     }
 }
 
-    if (m_fields->m_updateExtraData) {
-        m_fields->m_updateExtraData = false;
-        m_effectManager->m_persistentTimerItemSet = m_fields->m_loadedPersistentTimerItemSet;
-        m_attempts = m_fields->m_loadedAttempts;
-    }
-
     m_fields->m_inPostUpdate = false;
     m_fields->m_triedPlacingCheckpoint = false;
 }
