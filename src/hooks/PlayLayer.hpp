@@ -120,6 +120,9 @@ public:
     void postUpdate(float i_unkFloat);
 
     $override
+    void update(float dt);
+
+    $override
     CheckpointObject* markCheckpoint();
 
     $override
