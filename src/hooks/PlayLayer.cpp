@@ -157,6 +157,20 @@ void PSPlayLayer::postUpdate(float i_unkFloat) {
 
     PlayLayer::postUpdate(i_unkFloat);
 
+    void PSPlayLayer::update(float dt) {
+    PlayLayer::update(dt);
+
+    // replicate postUpdate logic that must run every frame
+    m_fields->m_inPostUpdate = true;
+    m_fields->m_triedPlacingCheckpoint = m_tryPlaceCheckpoint;
+
+    if (m_fields->m_updateExtraData) {
+        m_fields->m_updateExtraData = false;
+        m_effectManager->m_persistentTimerItemSet = m_fields->m_loadedPersistentTimerItemSet;
+        m_loadedAttempts = m_fields->m_loadedAttempts;
+    }
+}
+
     if (m_fields->m_updateExtraData) {
         m_fields->m_updateExtraData = false;
         m_effectManager->m_persistentTimerItemSet = m_fields->m_loadedPersistentTimerItemSet;
