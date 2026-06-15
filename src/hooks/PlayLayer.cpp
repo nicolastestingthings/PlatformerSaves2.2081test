@@ -156,7 +156,7 @@ void PSPlayLayer::postUpdate(float i_unkFloat) {
     m_fields->m_triedPlacingCheckpoint = m_tryPlaceCheckpoint;
 
     PlayLayer::postUpdate(i_unkFloat);
-
+}
     void PSPlayLayer::update(float dt) {
     PlayLayer::update(dt);
 
