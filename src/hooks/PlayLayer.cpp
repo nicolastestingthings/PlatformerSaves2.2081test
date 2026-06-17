@@ -197,7 +197,7 @@ CheckpointObject* PSPlayLayer::markCheckpoint() {
     }
 
     return l_checkpointObject;
-}
+
 
 void PSPlayLayer::resetLevel() {
     m_fields->m_inResetLevel = true;
