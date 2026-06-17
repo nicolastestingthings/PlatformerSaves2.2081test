@@ -173,7 +173,7 @@ void PSPlayLayer::postUpdate(float i_unkFloat) {
 
     m_fields->m_inPostUpdate = false;
     m_fields->m_triedPlacingCheckpoint = false;
-}
+
 
 CheckpointObject* PSPlayLayer::markCheckpoint() {
     PSCheckpointObject* l_checkpointObject = static_cast<PSCheckpointObject*>(PlayLayer::markCheckpoint());
