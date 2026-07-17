@@ -37,4 +37,4 @@ You can report a bug by [creating an issue](https://github.com/0x5abe/Platformer
 - Nikki for help with bindings
 - Maromalo for testing and suggestions
 - Gtxripmxt for ios testing
-- Memtheturtle for mac testing
+- Memtheturtle for mac testing 
